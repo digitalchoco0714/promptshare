@@ -4,15 +4,15 @@ export interface Prompt {
   title: string;
   description: string | null;
   body: string;
-  category: string;
+  category: Category;
   author_name: string;
 }
 
 export type Category = 
-  | 'Writing' 
-  | 'Coding' 
-  | 'Business' 
-  | 'Education' 
-  | 'Design' 
-  | 'Fun' 
-  | 'Other';
+  | '창작' 
+  | '코딩' 
+  | '비즈니스' 
+  | '교육' 
+  | '디자인' 
+  | '유머' 
+  | '기타';
