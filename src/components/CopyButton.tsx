@@ -28,12 +28,12 @@ export default function CopyButton({ text }: CopyButtonProps) {
       {copied ? (
         <>
           <Check size={18} />
-          <span>Copied!</span>
+          <span>복사 완료!</span>
         </>
       ) : (
         <>
           <Copy size={18} />
-          <span>Copy Prompt</span>
+          <span>프롬프트 복사</span>
         </>
       )}
     </button>

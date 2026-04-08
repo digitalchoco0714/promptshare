@@ -28,12 +28,12 @@ export default function PromptCard({ prompt }: PromptCardProps) {
         </h3>
         
         <p className="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
-          {prompt.description || 'No description provided.'}
+          {prompt.description || '설명이 없습니다.'}
         </p>
         
         <div className="flex items-center text-xs text-gray-500 gap-1 border-t pt-4">
           <User size={14} />
-          <span>By {prompt.author_name}</span>
+          <span>작성자: {prompt.author_name}</span>
         </div>
       </div>
     </Link>

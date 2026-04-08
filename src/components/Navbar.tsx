@@ -18,7 +18,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
             >
               <PlusCircle size={20} />
-              <span>Share Prompt</span>
+              <span>프롬프트 공유하기</span>
             </Link>
           </div>
         </div>

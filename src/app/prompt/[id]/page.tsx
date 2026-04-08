@@ -27,7 +27,7 @@ export default async function PromptDetailPage({ params }: PromptPageProps) {
     <div className="max-w-4xl mx-auto py-8">
       <Link href="/" className="inline-flex items-center text-gray-500 hover:text-indigo-600 mb-6 transition-colors">
         <ArrowLeft size={20} className="mr-2" />
-        <span>Back to Feed</span>
+        <span>피드로 돌아가기</span>
       </Link>
 
       <article className="bg-white rounded-3xl p-8 sm:p-12 border border-gray-100 shadow-sm">
@@ -49,13 +49,13 @@ export default async function PromptDetailPage({ params }: PromptPageProps) {
 
           <div className="flex items-center gap-3 text-gray-600 bg-gray-50 px-4 py-2 rounded-full w-fit">
             <User size={18} className="text-indigo-500" />
-            <span className="font-medium">Shared by {prompt.author_name}</span>
+            <span className="font-medium">작성자: {prompt.author_name}</span>
           </div>
         </header>
 
         {prompt.description && (
           <div className="mb-10">
-            <h2 className="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wider text-xs">Description</h2>
+            <h2 className="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wider text-xs">설명</h2>
             <p className="text-gray-600 leading-relaxed text-lg">
               {prompt.description}
             </p>
@@ -64,7 +64,7 @@ export default async function PromptDetailPage({ params }: PromptPageProps) {
 
         <div className="space-y-4">
           <div className="flex justify-between items-center">
-            <h2 className="text-lg font-bold text-gray-900 uppercase tracking-wider text-xs">The Prompt</h2>
+            <h2 className="text-lg font-bold text-gray-900 uppercase tracking-wider text-xs">프롬프트 내용</h2>
             <CopyButton text={prompt.body} />
           </div>
           
